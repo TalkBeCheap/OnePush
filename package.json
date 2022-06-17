@@ -1,8 +1,12 @@
 {
   "name": "onepush",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "onepush",
+    "Bark推送",
+    "typescript"
+  ],
   "main": "dist/onepush.umd.js",
   "module": "dist/onepush.es5.js",
   "typings": "dist/types/onepush.d.ts",
@@ -34,7 +38,7 @@
     "semantic-release-prepare": "ts-node tools/semantic-release-prepare",
     "precommit": "lint-staged",
     "travis-deploy-once": "travis-deploy-once",
-    "publish": "nrm use npm && npm publish && nrm use taobao",
+    "pub": "nrm use npm && npm publish && nrm use taobao",
     "prepush": "npm run test:prod && npm run commit",
     "push": "git push --follow-tags"
   },
